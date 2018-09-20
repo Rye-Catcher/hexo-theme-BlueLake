@@ -17,8 +17,8 @@ pre
     border-radius: 5px
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125)
     font-size: 13px
-    color: #333
-    background: #f7f8f8
+    color: #f7f8f8
+    background: #333
 figure.highlight,.codeblock
   background: #f7f8f8
   margin: 10px 0
@@ -46,7 +46,7 @@ figure.highlight,.codeblock
     display block 
     overflow-x: auto
   pre,.gutter,.code,.tag
-    background-color: inherit
+    background-color: #242424//black//inherit
     font-family: Source Code Pro, Monaco, Menlo, Consolas, monospace
     border: none
     padding: 0
@@ -58,16 +58,17 @@ figure.highlight,.codeblock
     .gutter
       display: none
   .gutter
-    background: #f7f8f8
+    background: #333//#f7f8f8
     border-right: 1px solid #e6e6e6
     padding: 0.3em 15px
     .line
-      color: #aaaaaa
+      color: #f7f8f8//#aaaaaa
   .line
     font-size: 13px
-    color: #333
+    color: #f7f8f8//#333
+    tab-size: 4
     &.marked
-      background: #f5e3de
+      background: #333//#f5e3de
 
   .code
     padding: 0.3em 15px 0.3em 1em
@@ -81,10 +82,10 @@ figure.highlight,.codeblock
 .highlight
   .comment
   .title
-    color: #888
+    color: #EEEE00
   .meta 
   .tag
-    color: #324977
+    color: #9932CC
   .attr
     color: #118a04
   .string,
@@ -93,10 +94,10 @@ figure.highlight,.codeblock
   .header,
   .ruby .symbol,
   .xml .cdatabody
-    color:  #920000
+    color:  #00CD66
   .keyword,
   .javascript .function
-    color: #ec25ec
+    color: #4876FF
   .number,
   .preprocessor,
   .built_in,
@@ -135,11 +136,12 @@ figure.highlight,.codeblock
   &.cpp,&.c
     .code
       .number,.built_in
-        color: #0086b3
+        color: #9932CC
       .preprocessor
         color: #df5000
       .title
-        color: #795da3
+        //color: #795da3
+        color: #4876FF
       .meta-keyword
         color: #a71d5d
   &.cs 

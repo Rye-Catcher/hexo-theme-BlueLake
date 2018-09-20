@@ -9,6 +9,9 @@ if theme.google_analytics
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create','#{theme.google_analytics}','auto');ga('send','pageview');
 
+if page.mathjax
+  include mathjax.jade
+
 if theme.baidu_analytics
   script.
     var _hmt = _hmt || [];
